@@ -7,16 +7,6 @@ from tests.base_test import BaseTest
 
 
 class TestItem(BaseTest):
-    # def setUp(self):
-    #     super(TestItem, self).setUp()
-    #     with self.app() as client:
-    #         with self.app_context():
-    #             UserModel("test", "123456").save_to_db()
-    #             auth_request = client.post("/auth",
-    #                                        data=json.dumps({"username": "test", "password": "123456"}),
-    #                                        headers={"Content-Type": "application/json"})
-    #             auth_token = json.loads(auth_request.data)["access_token"]
-    #             self.access_token = {"Authorization": auth_token}
     def setUp(self):
         super(TestItem, self).setUp()
         with self.app() as client:
